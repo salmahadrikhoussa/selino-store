@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #080808;
     --foreground: #ededed;
   }
 }
@@ -23,4 +23,160 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add fade transitions */
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+/* Make sure hover effects work properly */
+@media (hover: hover) {
+  .hover\:bg-gray-100:hover {
+    background-color: rgba(243, 244, 246, 1);
+  }
+  
+  .hover\:underline:hover {
+    text-decoration-line: underline;
+  }
+  
+  .group:hover .group-hover\:scale-105 {
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+/* Enhanced transitions */
+.transition-all {
+  transition-property: all;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) 
+             skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-0 {
+  --tw-translate-y: 0px;
+}
+
+.-translate-y-2 {
+  --tw-translate-y: -0.5rem;
+}
+
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) 
+                  var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) 
+                  var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+/* RTL support */
+[dir="rtl"] .flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .space-x-reverse > * + * {
+  margin-right: var(--tw-space-x-reverse);
+  margin-left: calc(var(--tw-space-x) * calc(1 - var(--tw-space-x-reverse)));
+}
+
+[dir="rtl"] .text-right {
+  text-align: right;
+}
+
+[dir="rtl"] .right-0 {
+  right: 0;
+}
+
+[dir="rtl"] .left-0 {
+  left: 0;
+}
+
+/* Swiper styles for product gallery */
+.product-main-slider {
+  --swiper-navigation-color: #000;
+  --swiper-pagination-color: #000;
+  margin-bottom: 1rem;
+}
+
+.product-main-slider .swiper-slide {
+  height: auto;
+}
+
+.product-thumb-slider .swiper-slide {
+  opacity: 0.4;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.product-thumb-slider .swiper-slide-thumb-active {
+  opacity: 1;
+  border-color: #000;
+}
+
+.product-thumb-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fix for RTL direction */
+[dir="rtl"] .swiper-button-next {
+  right: auto;
+  left: 10px;
+}
+
+[dir="rtl"] .swiper-button-prev {
+  left: auto;
+  right: 10px;
+}
+
+/* Swiper styles for product gallery */
+.product-main-slider {
+  --swiper-navigation-color: #000;
+  --swiper-pagination-color: #000;
+  margin-bottom: 1rem;
+}
+
+.product-main-slider .swiper-slide {
+  height: auto;
+}
+
+.product-thumb-slider .swiper-slide {
+  opacity: 0.4;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.product-thumb-slider .swiper-slide-thumb-active {
+  opacity: 1;
+  border-color: #000;
+}
+
+.product-thumb-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fix for RTL direction */
+[dir="rtl"] .swiper-button-next {
+  right: auto;
+  left: 10px;
+}
+
+[dir="rtl"] .swiper-button-prev {
+  left: auto;
+  right: 10px;
 }
