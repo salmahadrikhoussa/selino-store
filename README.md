@@ -1,35 +1,60 @@
-<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Selino | Modern Fashion E-Commerce Platform
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Selino is a sophisticated, performance-driven e-commerce platform designed to deliver an online shopping experience for clothes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Technical Architecture
+
+### Core Technologies
+- Framework: Next.js 14
+- Language: TypeScript
+- Styling: Tailwind CSS
+- State Management: React Hooks & Context API
+- Internationalization: Custom Multi-Language Support
+
+## Project Structure
+
+```
+selino-store/
+│
+├── app/                   # Next.js application routes
+│   ├── (routes)/          # Page components
+│   └── context/           # Global state management
+│
+├── components/            # Reusable UI components
+│   ├── layout/            # Structural components
+│   └── ui/                # Base UI elements
+│
+├── public/                # Static assets
+└── styles/                # Global styling
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18+
+- npm or Yarn
+- Git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+```bash
+# Clone the repository
+git clone https://github.com/salmahadrikhoussa/selino-store.git
 
-To learn more about Next.js, take a look at the following resources:
+# Navigate to project directory
+cd selino-store
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Install dependencies
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Run development server
+npm run dev
+```
 
+<<<<<<< HEAD
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
@@ -39,3 +64,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # selino-store
 An online shop with NextJS
 >>>>>>> 0a8bd7b72972d6fcb1e270d071b2a40d0bd0d323
+=======
+---
+>>>>>>> 20ead47c99ddbea1c8ac391a411151d48e69fe86
