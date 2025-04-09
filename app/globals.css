@@ -5,7 +5,10 @@
   --foreground: #171717;
 }
 
-@theme inline {
+
+
+/* With this: */
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -179,4 +182,17 @@ body {
 [dir="rtl"] .swiper-button-prev {
   left: auto;
   right: 10px;
+}
+
+/* Announcement bar scrolling animation */
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.simple-scroll {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 15s linear infinite;
+  padding-right: 50px;
 }
